@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyOrderActivity">
+
+    <TextView
+        android:id="@+id/my_order_tv_title"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:background="@drawable/menu_background"
+        android:text="@string/my_order"/>
+
+    <Button
+        android:id="@+id/my_order_btn_pay_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_order_tv_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/pay_now"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/my_order_tv_total_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_order_btn_pay_now"
+        android:layout_marginStart="10dp"
+        android:text="@string/total_order"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/my_order_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rp_100000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/my_order_btn_pay_now"
+        android:layout_toEndOf="@+id/my_order_tv_total_title"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_order_rv_drinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/my_order_tv_footer"
+        android:layout_below="@+id/my_order_tv_total"/>
+
+    <TextView
+        android:id="@+id/my_order_tv_footer"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@drawable/footer_background"
+        android:text="@string/_2021_andreas_jonathan"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/drinks_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/drinks_item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:text="@string/price"/>
+
+        <Button
+            android:id="@+id/drinks_item_btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

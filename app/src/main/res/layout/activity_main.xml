@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/profile_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:src="@drawable/profile"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/nim"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/balance"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/andreas_jonathan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/_2301871082"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/rp_100_000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="1">
+
+            <LinearLayout
+                android:id="@+id/main_rl_drinks"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_card"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/drinks"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/main_btn_drinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:text="@string/drinks"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/main_card"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/snacks"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/main_btn_snacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:text="@string/snacks"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/main_card"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/foods"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:id="@+id/main_btn_foods"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:text="@string/foods"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/main_card"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/topup"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/main_btn_topup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:text="@string/topup"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/footer_background"
+        android:text="@string/_2021_andreas_jonathan"/>
+
+
+</LinearLayout>

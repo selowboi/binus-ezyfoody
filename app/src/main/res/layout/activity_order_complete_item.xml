@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/order_complete_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/order_complete_item_tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/quantity"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/order_complete_item_tv_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/order_complete_item_tv_quantity"
+            android:text="@string/x"/>
+
+        <TextView
+            android:id="@+id/order_complete_item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/order_complete_item_tv_times"
+            android:text="@string/price"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

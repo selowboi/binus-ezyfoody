@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DrinksActivity">
+
+    <TextView
+        android:id="@+id/drinks_tv_title"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:background="@drawable/menu_background"
+        android:text="@string/drinks"/>
+
+    <Button
+        android:id="@+id/drinks_btn_my_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinks_tv_title"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/orange"
+        android:text="@string/my_order"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drinks_rv_drinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@id/drinks_tv_footer"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/drinks_btn_my_order"
+        />
+
+    <TextView
+        android:id="@+id/drinks_tv_footer"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@drawable/footer_background"
+        android:text="@string/_2021_andreas_jonathan"/>
+
+
+</RelativeLayout>

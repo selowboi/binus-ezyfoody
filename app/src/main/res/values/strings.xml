@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Binus EzyFoody</string>
+    <string name="topup">TopUp</string>
+    <string name="foods">Foods</string>
+    <string name="snacks">Snacks</string>
+    <string name="drinks">Drinks</string>
+    <string name="rp_100_000">Rp 100.000</string>
+    <string name="_2301871082">2301871082</string>
+    <string name="andreas_jonathan">Andreas Jonathan</string>
+    <string name="nim">NIM</string>
+    <string name="balance">Balance</string>
+    <string name="name">Name</string>
+    <string name="_2021_andreas_jonathan">© 2021, Andreas Jonathan</string>
+    <string name="my_order">My Order</string>
+    <string name="order">Order</string>
+    <string name="price">Price</string>
+    <string name="buy">Buy</string>
+    <string name="quantity">Quantity</string>
+    <string name="input_quantity">Input Quantity</string>
+    <string name="total">Total</string>
+    <string name="rp_100000">Rp. 100000</string>
+    <string name="order_more">Order More</string>
+    <string name="order_complete">Order Complete</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="your_order_complete_nthank_you">Your order complete.\nThank You</string>
+    <string name="total_order">Total:</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="x">X</string>
+    <string name="delete">Delete</string>
+    <string name="binus">BINUS</string>
+    <string name="ezyfoody">EzyFoody</string>
+    <string name="powered_by">Powered By</string>
+</resources>
